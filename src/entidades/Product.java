@@ -35,7 +35,7 @@ public class Product implements Comparable<Product>, Comparator<Product> {
 
 	@Override
 	public String toString() {
-		return "Product [name= " + name + ", price= " + String.format("%.2f", price)+ "]";
+		return "Product [name= " + name + ", price= " + String.format("r$ %.2f", price)+ "]";
 	}
 
 	@Override

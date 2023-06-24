@@ -40,9 +40,13 @@ public class ProgramProduct {
 		
 		// order by price descending
 		productList.sort(Comparator.comparing(Product::getName).reversed());
-		System.out.println("\nforEach as lambda expression. Comparator by name");
+		System.out.println("\nforEach as lambda expression. Comparator by name descending (reversed) ");
 		productList.forEach((product) -> System.out.println(product));
 		
+		ComparatorByPrice comparator = new ComparatorByPrice();
+		productList.sort(comparator);
+		System.out.println("\nforEach as lambda expression. Comparator by price ascending");
+		productList.forEach((product) -> System.out.println(product));		
 
 	}
 

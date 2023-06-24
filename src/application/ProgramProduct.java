@@ -28,7 +28,7 @@ public class ProgramProduct {
 		productList.add(p5);
 		productList.add(p6);
 		
-		// order by name ascending
+		// order by name descending
 		Collections.sort(productList); 
 		
 		for(Product nickname : productList) {

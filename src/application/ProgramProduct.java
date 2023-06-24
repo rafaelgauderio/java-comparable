@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
@@ -37,6 +38,10 @@ public class ProgramProduct {
 			System.out.println(nickname);
 		}
 		
+		// order by price descending
+		productList.sort(Comparator.comparing(Product::getName).reversed());
+		System.out.println("\nforEach as lambda expression. Comparator by name");
+		productList.forEach((product) -> System.out.println(product));
 		
 
 	}

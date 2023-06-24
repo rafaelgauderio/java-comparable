@@ -1,6 +1,8 @@
 package entidades;
 
-public class Product implements Comparable<Product> {
+import java.util.Comparator;
+
+public class Product implements Comparable<Product>, Comparator<Product> {
 	
 	private String name;
 	private Double price;
@@ -40,6 +42,11 @@ public class Product implements Comparable<Product> {
 	public int compareTo(Product product) {
 		return -price.compareTo(product.getPrice());
 		
+	}
+
+	@Override
+	public int compare(Product p1, Product p2) {		
+		return p1.getName().compareTo(p2.getName());
 	}
 	
 	

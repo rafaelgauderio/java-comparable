@@ -20,6 +20,7 @@ public class ProgramProduct {
 		Product p4 = new Product("Cabinet", 320.20);
 		Product p5 = new Product("Armchair", 1200.60);
 		Product p6 = new Product("Marble sink", 1600.00);
+		Product p7 = new Product("Wooden sink", 1300.20);
 		
 		productList.add(p1);
 		productList.add(p2);
@@ -27,8 +28,9 @@ public class ProgramProduct {
 		productList.add(p4);
 		productList.add(p5);
 		productList.add(p6);
+		productList.add(p7);
 		
-		// order by price  ascending
+		// order by price descending
 		Collections.sort(productList); 
 		
 		for(Product nickname : productList) {
